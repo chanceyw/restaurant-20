@@ -25,5 +25,3 @@ test('A user can see a list of orders', function(assert) {
     assert.equal(firstOrder.orderItems(1).name(), 'Fries');
   });
 });
-
-//to get develop branch
