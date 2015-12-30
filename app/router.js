@@ -8,6 +8,14 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('admin', function() {
     this.route('orders', function() {});
+    this.route('menu-items', function() {
+      this.route('new-item');
+      this.route('edit-item');
+    });
+  });
+
+  this.route('menu', {
+    path: '/'
   });
 });
 

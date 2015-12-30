@@ -1,0 +1,12 @@
+
+<h2>The Menu Bro!!!</h2>
+{{#group-categories items=model class="menu" tagName="ul" as |category|}}
+  <li>
+    <h3>{{category.name}}</h3>
+    <ul>
+      {{#each category.items as |menuItem|}}
+        {{menu-item-result menuItem=menuItem}}
+      {{/each}}
+    </ul>
+  </li>
+{{/group-categories}}
