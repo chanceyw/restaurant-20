@@ -9,8 +9,8 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('orders', function() {});
     this.route('menu-items', function() {
-      this.route('new-item');
-      this.route('edit-item');
+      this.route('new');
+      this.route('edit', {path: '/:menu-item_id'});
     });
   });
 
