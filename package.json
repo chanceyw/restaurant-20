@@ -45,6 +45,7 @@
     "ember-material-lite": "0.1.14",
     "ember-new-computed": "1.0.3",
     "ember-simple-auth": "1.0.1",
+    "ember-simple-form": "0.1.0",
     "ember-truth-helpers": "1.2.0"
   }
 }
