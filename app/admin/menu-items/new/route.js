@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       //Save Model then redirect
       menuItem.save().then(() => {
         this.transitionTo('admin.menu-items');
-      })
-    }
-  }
+      });
+    },
+  },
 });
