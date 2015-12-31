@@ -1,1 +1,7 @@
 {{outlet}}
+{{#each model as |value|}}
+  <li>
+    {{value.name}}
+    {{link-to "Edit" "admin.menu-items.edit" value}}
+  </li>
+{{/each}}
