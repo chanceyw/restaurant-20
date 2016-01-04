@@ -1,0 +1,15 @@
+<h2>Cart</h2>
+<table class="order-sidebar">
+  {{#each cart.order.items as |orderItem|}}
+  <tr>
+    <td>Item: {{orderItem.menuItem.name}}</td>
+    <td>Quanity: {{orderItem.quantity}}</td>
+    <td>Price: {{orderItem.menuItem.price}}</td>
+  </tr>
+  {{/each}}
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Total: {{cart.order.totalPrice}}</td>
+  </tr>
+</table>

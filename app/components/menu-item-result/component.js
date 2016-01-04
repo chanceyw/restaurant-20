@@ -5,6 +5,8 @@ export default Ember.Component.extend({
   cart: Ember.inject.service(),
 
   actions: {
-    //add item to cart
+    addToCart(menuItem) {
+      this.get('cart').addItem(menuItem);
+    }
   },
 });
