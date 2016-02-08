@@ -1,0 +1,14 @@
+
+<h2 class="menu-title">Bob's Menu</h2>
+{{#group-categories items=model class="menu" tagName="ul" as |category|}}
+  <li>
+    <h3>{{category.name}}</h3>
+    <ul>
+      {{#each category.items as |menuItem|}}
+        {{menu-item-result menuItem=menuItem}}
+      {{/each}}
+    </ul>
+  </li>
+{{/group-categories}}
+
+{{order-sidebar}}

@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "ember build -e production && surge dist chanceyw-restaurant.surge.sh && trash dist"
   },
   "repository": "",
   "engines": {
@@ -45,6 +46,7 @@
     "ember-material-lite": "0.1.14",
     "ember-new-computed": "1.0.3",
     "ember-simple-auth": "1.0.1",
+    "ember-simple-form": "0.1.0",
     "ember-truth-helpers": "1.2.0"
   }
 }
