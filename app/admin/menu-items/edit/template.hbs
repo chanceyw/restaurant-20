@@ -1,3 +1,5 @@
+
+<div class="form-menu__container">
 {{#simple-form startingValues=model onsubmit="saveItem" as |formValues|}}
   {{mdl-textfield value=formValues.name name="name" class="form-input__name" label="Name"}}
   {{mdl-textfield value=formValues.description name="description" class="form-input__description" label="Description"}}
@@ -7,3 +9,4 @@
 
   <button class="form-submit">Submit</button>
 {{/simple-form}}
+</div>

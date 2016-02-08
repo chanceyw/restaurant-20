@@ -1,1 +1,39 @@
 @import 'material-design-lite';
+
+html {
+  background-size: cover;
+  background: url(/img/rest-back.jpg) no-repeat center center;
+}
+.form-menu__container {
+  width: 50%;
+  background-color: #3F51B5;
+  font-family: sans-serif;
+  border: solid black 2px;
+  font-weight: bolder;
+  list-style: none;
+  padding: 5px;
+}
+.menu-title {
+  text-align: center;
+  color: #14216b;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 59px;
+}
+.form-menu__container-cart {
+  width: 30%;
+  background-color: #3F51B5;
+  font-family: sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  right: 75px;
+  top: 250px;
+  border: solid black 2px;
+  min-height: 25vh;
+}
+.add-cart {
+  padding: 3px;
+  background: #a19898;
+  border: solid #2f2c2c 2px;
+  font-weight: bolder;
+}
